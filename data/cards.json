@@ -1,0 +1,38 @@
+[
+    {
+        "image": "../assets/Aurora.png",
+        "name": "Aurora"
+    },
+    {
+        "image": "../assets/belle.png",
+        "name": "Belle"
+    },
+    {
+        "image": "../assets/ariel(1).png",
+        "name": "Ariel"
+    },
+    {
+        "image": "../assets/jasmine.png",
+        "name": "Jasmine"
+    },
+    {
+        "image": "../assets/Merida.png",
+        "name": "Merida"
+    },
+    {
+        "image": "../assets/Pocahontas.png",
+        "name": "Pocahontas"
+    },
+    {
+        "image": "../assets/SnowWhite.png",
+        "name": "SnowWhite"
+    },
+    {
+        "image": "../assets/Tiana.png",
+        "name": "Tiana"
+    },
+    {
+        "image": "../assets/Cinderella.png",
+        "name": "Cinderella"
+    }
+]
