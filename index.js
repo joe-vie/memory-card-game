@@ -74,8 +74,17 @@ function checkForMatch() {
   let isMatch = firstCard.dataset.name === secondCard.dataset.name;
 
   isMatch ? disableCards() : unflipCards();
+  
+    return;
+    
 }
 
+let amtOfCards = 18;
+    if (isMatch = amtOfCards) {
+      alert("Congratulations! You won! Take a screenshot to show off to friends or refresh with the refresh button below.");
+    }
+
+    
 //this disables the cards
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
@@ -211,10 +220,6 @@ function resetBoard() {
   firstCard = null;
   secondCard = null;
   lockBoard = false;
-}
-
-if (document.querySelectorAll(".gridContainer").length == score.length) {
-  alert("Congratulations! You won!");
 }
 
 function restart() {
