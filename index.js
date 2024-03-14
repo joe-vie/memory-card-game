@@ -63,6 +63,8 @@ function flipCard() {
 
   secondCard = this;
   score++;
+  cardMatches = firstCard+secondCard;
+
   document.querySelector(".score").textContent = score;
   lockBoard = true;
 
@@ -73,18 +75,13 @@ function flipCard() {
 function checkForMatch() {
   let isMatch = firstCard.dataset.name === secondCard.dataset.name;
 
+  //we'll highlight the importance of isMatch here
   isMatch ? disableCards() : unflipCards();
   
     return;
-    
-}
-
-let amtOfCards = 18;
-    if (isMatch = amtOfCards) {
-      alert("Congratulations! You won! Take a screenshot to show off to friends or refresh with the refresh button below.");
-    }
-
-    
+  
+    endOfGame();
+} 
 //this disables the cards
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
@@ -102,7 +99,7 @@ function unflipCards() {
   }, 1000);
 }
 
-// this is the confetti part at the end teehee
+/* // this is the confetti part at the end teehee
 canvas = document.getElementById("canvas");
 ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
@@ -213,8 +210,15 @@ window.addEventListener('resize', function () {
 
 window.addEventListener('click', function () {
   initConfetti();
-});
-
+}); */
+// this is the popup we will make for this game
+//function endOfGame() {
+  ///let cardMatches = (firstCard + secondCard) * 8;
+    //if (cardMatches) {
+      //alert("Congratulations! You won! Take a screenshot to show off to friends or refresh with the refresh button below.");
+    //}
+  //return;
+//}
 //allows for the deck to reset
 function resetBoard() {
   firstCard = null;
